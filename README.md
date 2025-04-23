@@ -1,6 +1,6 @@
 # Medições
 
-**Medições** é uma aplicação web desenvolvida para gerenciar o controle de contratos de fornecedores e contas recorrentes. A plataforma permite realizar integrações com o **TOTVS Protheus**, automatizar comunicações com fornecedores e gerar arquivos PDF com os dados extraídos dos contratos e pedidos de compras. Além disso, a aplicação conta com uma API em Python para disparar alertas via e-mail relacionados aos vencimentos de contratos e contas, além de realizar o reset mensal dos status de cada contrato/conta.
+**Medições** é uma aplicação web desenvolvida para gerenciar o controle de contratos de fornecedores e contas recorrentes. A plataforma permite realizar integrações com o **TOTVS Protheus**, automatizar comunicações com fornecedores e gerar arquivos PDF com os dados extraídos dos contratos e pedidos de compras. Além disso, a aplicação conta com um backend em Python para disparar alertas via e-mail relacionados aos vencimentos de contratos e contas, além de realizar o reset mensal dos status de cada contrato/conta.
 
 ## Funcionalidades
 
@@ -26,7 +26,7 @@
 
 ### 5. **API Python para Alertas e Notificações**
 
-- A API em Python é responsável por:
+- Server em Python é responsável por:
   - Enviar **alertas via e-mail** sobre atrasos na medição dos contratos.
   - Notificar sobre **vencimentos próximos**, garantindo que os responsáveis estejam cientes.
   - **Resetar os status** dos contratos todo início de mês, garantindo um controle contínuo e organizado.
