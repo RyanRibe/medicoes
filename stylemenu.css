@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/bk.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.5);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+
+}
+
+body {
+  /* background-image: url(./assets/assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  */
+  background: var(--bg-url) no-repeat top center/cover;
+  height: 80vh;
+}
+
+body * {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+}
+
+#container {
+  width: 100%;
+  max-width: 580px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
+}
+
+
+
+#profile img {
+  align-items: center;
+  cursor: pointer;
+  width: 381px;
+  height: 123.3px;
+  margin-left: 60px;
+  
+}
+
+
+/* LINKS */
+
+ul {
+
+  list-style: none;
+margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+ height: 40vh;
+  justify-content: center; 
+
+}
+
+ul li a {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+  
+  backdrop-filter: blur(10px);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+ul li a:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  
+  background: rgba(0, 89, 157, 0.61);
+  backdrop-filter: blur(30px);
+  border: 3px solid var(--stroke-color);
+  border-radius: 8px;
+  
+  backdrop-filter: blur(4px);
+  text-decoration: none;
+  font-weight: 500;
+  
+  transition: background 0.2s;
+}
+
+footer {
+  font-size: 16px;
+  opacity: 60%;
+  bottom: 10px;
+  left: 50%; /* Coloca o lado esquerdo do footer no meio da tela */
+  position: fixed;
+  color: var(--text-color);
+  text-align: center;
+  text-decoration: none;
+  display: block;
+
+  /* Centraliza o elemento em relação ao meio da tela */
+  transform: translateX(-50%);
+}
+
+#user-box {
+  font-family: Arial, sans-serif;
+  position: absolute;
+  top: 10px;
+  right: 63px;
+  padding: 5px;
+  max-width: 170px;
+  max-height: 37px;
+  overflow: hidden;
+  font-size: 12px;
+  cursor: default; 
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  text-decoration: none;
+  display: flex;            /* Flexbox para centralizar */
+  align-items: center;      /* Centraliza verticalmente */
+  justify-content: center;  /* Centraliza horizontalmente */
+}
+
+#user-box i {
+  margin-top: -2px;
+  margin-right: 3px;
+
+}
+
+#user-box:hover {
+  background: rgba(255, 254, 254, 0.2);
+}
+
+
+
+
+.logout-box {
+  color: #fff;
+  z-index: 1000;
+  position: absolute; 
+  top: 7px;
+  right: 6px;
+  text-decoration: none;
+  font-size: 14px; 
+  
+}
+
+.logout-box:hover{
+  transform: scale(1.11);
+
+}
